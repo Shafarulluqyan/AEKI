@@ -1,52 +1,46 @@
 <script>
-import { mapActions, mapState } from 'pinia'
-import { useCounterStore } from '../stores/counter'
-// import CardItem from '../components/CardItem.vue'
-// import SideBar from '../components/SideBar.vue'
-// import PaginationPage from '../components/PaginationPage.vue'
+import { mapActions, mapState } from "pinia";
+import { useCounterStore } from "../stores/counter";
 
 export default {
   data() {
     return {
-      searchQuery: ''
-    }
+      searchQuery: "",
+    };
   },
   computed: {
-    ...mapState(useCounterStore, ['categories'])
+    ...mapState(useCounterStore, ["categories"]),
   },
   methods: {
-    ...mapActions(useCounterStore, ['fetchCategory', 'fetchData']),
+    ...mapActions(useCounterStore, ["fetchCategory", "fetchData"]),
     performSearch() {
-      const counterStore = useCounterStore()
-      counterStore.searchQuery = this.searchQuery // Simpan query pencarian di store
-      counterStore.doSearch() // Panggil fungsi doSearch di store
-    }
+      const counterStore = useCounterStore();
+      counterStore.searchQuery = this.searchQuery;
+      counterStore.doSearch();
+    },
   },
   created() {
-    this.fetchCategory()
-  }
-  // components: { CardItem, SideBar, PaginationPage }
-}
+    this.fetchCategory();
+  },
+};
 </script>
 
 <template>
-  <!-- Sidebar/menu -->
   <div class="col-md-3 mt-2">
     <nav class="sidebar mt-3 rounded-3" style="background-color: #fff8c9">
       <div class="container">
-        <h3><b>List of Category</b></h3>
+        <h3><b>List of Categories</b></h3>
       </div>
       <div>
         <div class="category-list">
-          <ul>
-            <li v-for="category in categories" :key="category.id">
-              <button @click="filterByCategory(category.name)">
-                {{ category.name }}
-              </button>
-            </li>
+          <ul class="list-group">
+            <!-- Menambahkan item khusus -->
+            <li class="list-group-item">- Meja</li>
+            <li class="list-group-item">- Kursi</li>
+            <li class="list-group-item">- Lemari</li>
           </ul>
         </div>
-        <div>
+        <div class="mt-3">
           <label for="product-search">Search Product:</label>
           <input
             type="text"

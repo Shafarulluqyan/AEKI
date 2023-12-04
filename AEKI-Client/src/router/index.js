@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import DetailProduct from '../views/DetailProduct.vue'
-import BookmarkView from '../views/BookmarkViewj.vue'
+import BookmarkView from '../views/BookmarkView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

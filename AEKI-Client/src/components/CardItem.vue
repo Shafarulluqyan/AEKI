@@ -12,7 +12,7 @@ export default {
 </script>
 <template>
   <div class="col-md-4">
-    <div class="card">
+    <div class="card" style="height: 100%;">
       <img :src="product.imgUrl" />
       <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
