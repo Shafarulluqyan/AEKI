@@ -1,0 +1,27 @@
+[
+    {
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "secretpass123",
+      "role": "admin",
+      "phoneNumber": "123456789",
+      "address": "123 Main St, City, Country"
+    },
+    {
+      "username": "jane_smith",
+      "email": "jane.smith@example.com",
+      "password": "myp@ssw0rd",
+      "role": "staff",
+      "phoneNumber": "987654321",
+      "address": "456 Elm St, Town, Country"
+    },
+    {
+      "username": "alex_jones",
+      "email": "alex.jones@example.com",
+      "password": "strongP@ss!",
+      "role": "staff",
+      "phoneNumber": "789012345",
+      "address": "789 Oak St, Village, Country"
+    }
+  ]
+  

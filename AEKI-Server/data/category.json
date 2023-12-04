@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Meja",
+      "createdAt": "2023-10-01",
+      "updatedAt": "2023-10-01"
+    },
+    {
+      "name": "Kursi",
+      "createdAt": "2023-10-02",
+      "updatedAt": "2023-10-02"
+    },
+    {
+      "name": "Lemari",
+      "createdAt": "2023-09-30",
+      "updatedAt": "2023-10-01"
+    }
+  ]
