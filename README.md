@@ -13,7 +13,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine before 
 1. Open your terminal and journey to the server directory:
 
    ```bash
-   cd Aeki-Server
+   cd AEKI-Server
    ```
 
 2. Install the magical dependencies:
@@ -33,7 +33,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine before 
 1. Open another terminal quest and navigate to the client directory:
 
    ```bash
-   cd Aeki-Client
+   cd AEKI-Client
    ```
 
 2. Install the required enchantments:
